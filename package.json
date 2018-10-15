@@ -104,11 +104,6 @@
       "node"
     ]
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
   "devDependencies": {
     "antd-mobile": "^2.2.5",
     "axios": "^0.18.0",

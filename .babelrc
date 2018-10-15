@@ -1,18 +1,11 @@
 {
   "presets": [
-    [
-      "env",
-      {
-        "modules": false
-      }
-    ],
-    "stage-2",
-    "react"
+    "react-app"
   ],
   "plugins": [
     ["import", { 
       "libraryName": "antd-mobile", 
-      "style": "true"
+      "style": "true" 
     }]
   ]
 }

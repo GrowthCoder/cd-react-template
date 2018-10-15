@@ -4,9 +4,10 @@ import { Provider } from 'react-redux';
 import {
   BrowserRouter as Router,
   Route,
-} from 'react-router-dom';
+} from 'react-router-dom'
+import 'antd-mobile/dist/antd-mobile.css'
 import store from './store'
-import Counter from './components/counter';
+import Counter from './components/counter'
 
 ReactDOM.render(
   <Provider store={store}>
