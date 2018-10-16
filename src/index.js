@@ -1,20 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import {
-  BrowserRouter as Router,
-  Route,
-} from 'react-router-dom'
 import 'antd-mobile/dist/antd-mobile.css'
-import store from './store'
-import Counter from './components/counter'
+import Routers from '@src/router'
+import store from '@src/store'
+
+// 组件里面注入公共方法
+const RCP = React.Component.prototype
+RCP.dispatch = store.dispatch
 
 ReactDOM.render(
+  // Provider组件 默认子组件可以拿到state
   <Provider store={store}>
-    <Router>
-      <div>
-        <Route path="/test" component= {Counter}></Route>
-      </div>
-    </Router>
+    <Routers />
   </Provider>
-  , document.getElementById('root'));
+  , document.getElementById('root')
+);
