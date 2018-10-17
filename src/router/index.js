@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom'
-import Counter from '../pages/counter'
+import Counter from '../containers/counter'
 
 const Routes = () => (
   <div className="app">

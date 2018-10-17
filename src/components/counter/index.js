@@ -3,13 +3,13 @@ import { addCounter } from '@src/actions/counter'
 
 export default class Counter extends Component {
   render() {
-    let { count } = this.props
-    count = count || 0
+    let { counter } = this.props
+    counter = counter || {}
 
     return (
       <div>
         <h2>计数器</h2>
-        <div style={{ fontSize: 30, color: '#f66' }}>{count}</div>
+        <div style={{ fontSize: 30, color: '#f66' }}>{counter.count}</div>
         
         <button onClick={() => 
           {this.dispatch(addCounter())}}>Count</button>
