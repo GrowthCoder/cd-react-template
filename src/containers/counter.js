@@ -6,5 +6,5 @@ const mapStateToProps = state => {
     counter: state.counter
   }
 }
-
+// connect 从 UI 组件生成容器组件
 export default connect(mapStateToProps)(Counter)

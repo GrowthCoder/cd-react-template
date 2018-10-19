@@ -6,3 +6,11 @@ export function addCounter () {
     type: COUNTER_ADD // action name
   }
 }
+
+export function asyncCount () {
+  return dispatch => {
+    setTimeout(() => {
+      dispatch(addCounter())
+    }, 1000)
+  }
+}

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import 'antd-mobile/dist/antd-mobile.css'
 import Routers from '@src/router'
 import store from '@src/store'
+import '@src/common/styles/common.scss'
 
 // 组件里面注入公共方法
 const RCP = React.Component.prototype
