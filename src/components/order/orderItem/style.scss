@@ -1,0 +1,39 @@
+.orderItem {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 1px solid #D5D7C6;
+  margin-bottom: 10px;
+
+  &__img {
+    img{
+      width: 140px;
+    }
+  }
+  &__btn {
+    margin-top: 60px;
+    color: #41675A;
+    background: #FEFAE8; 
+    border-radius: 4px;
+    padding: 4px;
+
+    &--todo {
+      color: #41675A;
+    }
+    &--done {
+      color: #F3F5E1;
+    }
+  }
+  &__textarea {
+    width: 100vw;
+    margin-top: 10px;
+  }
+  &__star {
+    color: #ccc;
+    &--light {
+      color: red;
+    }
+  }
+}
