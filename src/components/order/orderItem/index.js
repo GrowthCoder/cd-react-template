@@ -79,6 +79,7 @@ class OrderItem extends Component {
     this.props.onSubmit(id, comment, stars)
   }
 
+  // 函数式组件 
   renderEditArea() {
     return (
       <div>
