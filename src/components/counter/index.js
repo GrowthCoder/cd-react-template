@@ -11,7 +11,6 @@ import './index.scss'
 
 class Counter extends Component {
   render() {
-    debugger
     const { isAuth } = this.props.auth
     return isAuth? this.renderCounter() : this.renderLogin()
   }
