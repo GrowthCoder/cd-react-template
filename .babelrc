@@ -1,11 +1,13 @@
 {
   "presets": [
-    "react-app"
+    "react-app",
+    "next/babel"
   ],
   "plugins": [
     ["import", { 
       "libraryName": "antd-mobile", 
       "style": "true" 
-    }]
+    }],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
   ]
 }

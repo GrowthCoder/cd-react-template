@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+// import react-redux, don't need subscribe some listener
+import { Provider } from 'react-redux'; 
 import 'antd-mobile/dist/antd-mobile.css'
 import Routers from '@src/router'
 import store from '@src/store'

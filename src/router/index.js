@@ -2,17 +2,23 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
+  Switch,
+  Redirect
 } from 'react-router-dom'
-import Counter from '../containers/counter'
+import Counter from '@src/components/counter'
 import Order from '@src/components/order/header'
+import Auth from '@src/components/auth'
 
 const Routes = () => (
   <div className="app">
     <Router>
-      <div>
-        <Route path="/test" component= {Counter}></Route>
-        <Route path="/order" component= {Order}></Route>
-      </div>
+      <Switch>
+          <Route path="/login" component={Auth}></Route>
+          <Route path="/test" component= {Counter}></Route>
+          <Route path="/order" component= {Order}></Route>
+          {/* 如果上面没有命中 则 */}
+          <Redirect to="/login" component={Auth}></Redirect>
+      </Switch>
     </Router>
   </div>
 )

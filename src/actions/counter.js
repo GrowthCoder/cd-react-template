@@ -8,6 +8,7 @@ export function addCounter () {
 }
 
 export function asyncCount () {
+  // return a function,simulation async operation
   return dispatch => {
     setTimeout(() => {
       dispatch(addCounter())
