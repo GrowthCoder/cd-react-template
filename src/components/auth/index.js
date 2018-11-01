@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 import { Button } from 'antd-mobile';
-import { login } from '@src/actions/auth'
+import { login} from '@src/actions/auth'
 
 @connect(state => state.auth)
 

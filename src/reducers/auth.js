@@ -15,6 +15,11 @@ export default function auth(state = {
         ...state,
         isAuth: false
       }
+    case types.PROVINCE: 
+      return {
+        ...state,
+        data: action.payload
+      }
     default: 
       return state
   }

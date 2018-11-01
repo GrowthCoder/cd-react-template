@@ -65,6 +65,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://channelraise.dev.yinchengku.com:15000",
   "browserslist": [
     ">0.2%",
     "not dead",
